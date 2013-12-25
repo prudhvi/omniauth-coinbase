@@ -2,7 +2,7 @@ require 'omniauth-oauth2'
 
 module OmniAuth
   module Strategies
-    class CoinBase < OmniAuth::Strategies::OAuth2
+    class Coinbase < OmniAuth::Strategies::OAuth2
       # Give your strategy a name.
       option :name, "coinbase"
 
@@ -12,7 +12,6 @@ module OmniAuth
         :site          => 'https://coinbase.com',
         :authorize_url => 'https://coinbase.com/oauth/authorize',
         :token_url     => 'https://coinbase.com/oauth/token'
-
       }
 
       # These are called after authentication has succeeded. If

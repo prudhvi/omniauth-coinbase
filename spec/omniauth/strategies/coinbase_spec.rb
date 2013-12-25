@@ -1,9 +1,9 @@
 require 'spec_helper'
 
-describe OmniAuth::Strategies::CoinBase do
+describe OmniAuth::Strategies::Coinbase do
 
   subject(:coinbase_strategy) do
-    OmniAuth::Strategies::CoinBase.new(nil, @options || {})
+    OmniAuth::Strategies::Coinbase.new(nil, @options || {})
   end
 
   describe '#client' do

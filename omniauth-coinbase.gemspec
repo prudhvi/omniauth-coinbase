@@ -1,7 +1,6 @@
-# coding: utf-8
-lib = File.expand_path('../lib', __FILE__)
-$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'omniauth/omniauth-coinbase/version'
+# -*- encoding: utf-8 -*-
+$:.push File.expand_path("../lib", __FILE__)
+require "omniauth-coinbase/version"
 
 Gem::Specification.new do |gem|
   gem.name          = "omniauth-coinbase"
@@ -20,6 +19,7 @@ Gem::Specification.new do |gem|
 
   gem.add_development_dependency "bundler", "~> 1.3"
   gem.add_development_dependency "rake"
+  gem.add_dependency 'omniauth', '~> 1.0'
   gem.add_dependency 'omniauth-oauth2', '~> 1.0'
   gem.add_development_dependency 'rspec', '~> 2.7'
   gem.add_development_dependency 'rack-test'

@@ -2,7 +2,7 @@ require 'bundler/setup'
 require 'rspec'
 require 'rack/test'
 require 'webmock/rspec'
-require 'omniauth/omniauth-coinbase'
+require 'omniauth-coinbase'
 
 RSpec.configure do |config|
   config.include WebMock::API
